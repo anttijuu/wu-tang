@@ -1,4 +1,4 @@
-package oy.interact;
+package oy.interact.tira;
 
 public class Programmer {
 	private String name;

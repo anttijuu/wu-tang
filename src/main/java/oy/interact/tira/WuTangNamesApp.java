@@ -1,4 +1,4 @@
-package oy.interact;
+package oy.interact.tira;
 
 /**
  * Wu-Tang name generator.
@@ -12,11 +12,15 @@ public class WuTangNamesApp
         System.out.println( "--------------------------------------");
         WuTangNameGenerator generator = new WuTangNameGenerator();
         System.out.format("- The generator can produce %d unique names%n", generator.possibleCombinations());
-        final String [] students = {"Juha I", "Antti J", "Heli A", "Priyanka S", "Behnaz N", "Joni R", "Jouni L", "Mikko R", "Päivi R", "Pertti K", "Marianne K", "Netta I", "Karin V"};
+        final String [] students = {"Kevin B", "Antti J", "Kristian H.", "Joni R", "Jouni L", "Mikko R", "Päivi R", "Pertti K", "Juha I", "Markku O", "Netta I", "Harrri O-K"};
         Programmer [] programmers = generator.generateNames(students);
-        int counter = 1;
-        for (Programmer programmer : programmers) {
-            System.out.format("%3d. %15s a.k.a. %s%n", counter++, programmer.getName(), programmer.getProgrammerName());
+        if (null != programmers) {
+            int counter = 1;
+            for (Programmer programmer : programmers) {
+                System.out.format("%3d. %-15s a.k.a. %s%n", counter++, programmer.getName(), programmer.getProgrammerName());
+            }
+        } else {
+            System.out.println("*** ERROR: Generator did not generate any programmers.");
         }
     }
 

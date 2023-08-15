@@ -1,8 +1,10 @@
 # Wu-Tang nimigeneraattori koodareille
 
-Tämän tehtävän tarkoitus on antaa sinulle, hyvä opiskelija, mahdollisuus tarkistaa itse onko TIRA -kurssin osaamisvaatimukset kohdallaan. 
+Tämän valinnaisen tehtävän tarkoitus on antaa sinulle, hyvä opiskelija, mahdollisuus tarkistaa itse ovatko TIRA -kurssin osaamisvaatimukset osaltasi kohdallaan. 
 
-Tehtävässä tarvitaan vain kurssien Ohjelmointi 1 ja 2 osaamistasoa vastaavia asioita:
+Jos tämä tehtävä tuottaa ylipääsemättömiä vaikeuksia, ohjelmoinnin perusteet Javalla eivät välttämättä vielä ole hallussa. Se ei estä kurssin aloittamista, mutta voi tarkoittaa sitä että varaudu kertaamaan ja oppimaan perusteita samalla kun teet kurssin tehtäviä.
+
+Tässä tehtävässä tarvitaan vain kurssien Ohjelmointi 1 ja 2 osaamistasoa vastaavia asioita:
 
 * taulukoita (array),
 * silmukoita (loop; for ja while),
@@ -13,30 +15,50 @@ Tehtävässä tarvitaan vain kurssien Ohjelmointi 1 ja 2 osaamistasoa vastaavia 
 * metodeja (eli funktioita),
 * parametrin välitystä ja paluuarvoja.
 
-> Opettajan malliratkaisussa on noin 75 riviä tehollista koodia ja kolme luokkaa. Oma ratkaisusi voi tietysti olla erilainen ja silti ihan OK.
+> Opettajan oliopohjaisessa malliratkaisussa on noin 75 riviä tehollista koodia ja kolme luokkaa. Oma ratkaisusi voi tietysti olla erilainen ja silti ihan OK.
 
 ## Tehtävä
 
-Toteuta Javalla **ohjelmoijan nimigeneraattori**, joka:
+Toteuta Javalla **ohjelmoijan nimigeneraattori**, joka 
 
-0. esittelee kolme `String` -taulukkoa: a) henkilöiden nimiä, b) ohjelmoijan lempinimen etunimiä ja c) ohjelmoijan lempinimen sukunimiä,
-1. käsittelee taulukossa olevia henkilöiden nimiä siten, että...
-2. jokaiselle nimelle generoidaan satunnainen **ohjelmoijan lempinimi** joka on muotoa "4bstract Re¢ursion", eli siinä on *ohjelmoijan* etunimi ja sukunimi (yhdessä `String` -oliossa),
-3. tarkistaa että nimi on uniikki (sellaista ei ole tähän mennessä jo generoitu, tällä ohjelman suorituskerralla),
-4. jokaiselle henkilölle annetaan tällainen satunnaisesti generoitu ohjelmoijan nimi, ja...
-5. ...lopuksi tulostetaan kaikki henkilöiden nimet ja hänen ohjelmoijan nimensä.
+1. annetuille henkilöille (merkkijonotaulukossa olevia `String` -olioita) 
+2. luo *satunnaisen* ohjelmoijan nimen yhdistämällä kahdesta merkkijonotaulukosta yhden ohjelmoijan nimen (esimerkiksi "Infinite∞ L➿p" on koostettu kahdesta taulukosta, toisesta sana "Infinite∞" ja toisesta sana "L➿p"),
+3. varmistaen ettei tätä ohjelmoijan nimeä ole jo annettu jollekulle henkilölle (jos on, arpoo uuden ohjelmoijan nimen),
+4. ja lopuksi tulostaa henkilöiden nimet ja heidän ohjelmoijan nimensä.
 
-Esimerkki tulostuksesta löytyy alta.
+Ohjelman tulostuksen pitäisi näyttää tältä:
+
+```console
+Wu-Tang name generator for programmers
+--------------------------------------
+- The generator can produce 342 unique names
+  1. Kevin B         a.k.a. ∧bstract ⨃nderflow
+  2. Antti J         a.k.a. R∀ndom βyte
+  3. Kristian H.     a.k.a. ⦶ctal L➿p
+  4. Joni R          a.k.a. Hex Rege𝒳
+  5. Jouni L         a.k.a. Ïnvariant Thread
+  6. Mikko R         a.k.a. ℙrotected De🪳ger
+  7. Päivi R         a.k.a. ℙrotected Øverflow
+  8. Pertti K        a.k.a. ⦶ctal Packet
+  9. Juha I          a.k.a. Parallel Ĥeap
+ 10. Markku O        a.k.a. R∀ndom Warning
+ 11. Netta I         a.k.a. Infinite∞ L➿p
+ 12. Harrri O-K      a.k.a. Linεar Packet
+```
+
+"Hex Rege𝒳" kuulostaa oikein rimmaavalta nimeltä! "Infinite∞ L➿p" -nimestä tulee taas mieleen erään teknologiajätin eräs katuosoite *One Infinite Loop*...
+
+> Sinun *ei tarvitse* käyttää esimerkin mukaisia erikoismerkkejä, symboleita tai emojeita ohjelmoijan nimissä, jos konsolisi ei osaa näitä oikein tulostaa (I'm looking at you Windows...).
 
 ## Tarkempia ohjeita
 
-Henkilöiden nimet ja mahdolliset ohjelmoijan nimet voivat olla kovakoodatuissa taulukoissa. Ei ole siis tarvetta käsitellä ohjelman käynnistysparametreja, kysyä nimiä käyttäjältä tai lukea niitä tiedostoista.
+Henkilöiden nimet ja kaikki mahdolliset ohjelmoijan nimet voivat olla kovakoodatuissa taulukoissa. Ei ole siis tarvetta käsitellä ohjelman käynnistysparametreja, kysyä nimiä käyttäjältä tai lukea niitä tiedostoista.
 
 Käytä aikaisempien kurssien oppimaa, eli niitä asioita mitä yllä listattiin opetetun Ohjelmointi 1 ja 2 -kursseilla.
 
 Satunnaisuuden generointiin voit käyttää Javan `ThreadLocalRandom` luokkaa. 
 
-Voit esimerkiksi arpoa nimen taulukosta:
+Voit esimerkiksi arpoa nimen taulukosta tietystä satunnaisesta indeksistä:
 
 ```Java
 	// firstNames on String -taulukko, jossa sopivia ohjelmoijan nimen etunimiä.
@@ -46,27 +68,12 @@ Voit esimerkiksi arpoa nimen taulukosta:
 	// Ja niin edelleen...
 ```
 
-## Ohjelman tulostus
+Tulostaminen onnistuu kätevästi käyttäen formatointia:
 
-Ohjelman tulostuksen pitäisi näyttää tältä:
-
-```console
-Wu-Tang name generator for programmers
---------------------------------------
-  1.          Juha I a.k.a. Ⓒ orrupt Compiler
-  2.         Antti J a.k.a. Infinite∞ L➿p
-  3.          Heli A a.k.a. Private Øverflow
-  4.      Priyanka S a.k.a. Infinite∞ Øverflow
-  5.        Behnaz N a.k.a. Ⓒ orrupt Warning
-  6.          Joni R a.k.a. Hex Thread
-  7.         Jouni L a.k.a. Linεar 3reakpoint
-  8.         Mikko R a.k.a. Hex Rege𝒳
-  9.         Päivi R a.k.a. Linεar Compiler
- 10.        Pertti K a.k.a. Bōōlean Packet
+```Java
+   System.out.format("%3d %s%n", integerVariable, stringVariable);
 ```
-"Hex Rege𝒳" kuulostaa oikein rimmaavalta nimeltä! "Infinite∞ L➿p" -nimestä tulee taas mieleen erään teknologiajätin eräs katuosoite *One Infinite Loop*...
-
-Sinun *ei tarvitse* käyttää esimerkin mukaisia erikoismerkkejä tai symboleita ohjelmoijan nimissä, jos konsolisi ei osaa näitä oikein tulostaa.
+Jolloin tulostuu kolmen merkin levyinen kokonaislukuarvo ja sen perään merkkijonomuuttuja ja rivinvaihto.
 
 ## Tietoja
 

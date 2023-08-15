@@ -1,13 +1,50 @@
-package oy.interact;
+package oy.interact.tira;
 
 import java.util.concurrent.ThreadLocalRandom;
 
 public class WuTangNameGenerator {
 
-	private static final String[] firstNames = { "Hex", "⦶ctal", "Bōōlean", "Linεar", "$tatic", "Global", "∧bstract", "∫inal", "0verridden",
-			"Private", "ℙrotected", "Parallel", "Ⓒ orrupt", "Infinite∞", "Ðisconnected", "R∀ndom", "Quadrati⪽", "Ïnvariant"};
-	private static final String[] lastNames = { "∑tack", "Ĥeap", "L➿p", "Re¢ursion", "Øverflow", "3reakpoint",
-			"Warning", "1nstance", "De🪳 ger", "βyte", "Package", "Terminal", "Thread", "Process", "Packet", "Mütex", "Compiler", "Rege𝒳", "⨃nderflow", "⟐verflow"};
+	private static final String[] firstNames = { 
+		"Hex", 
+		"⦶ctal", 
+		"Bōōlean", 
+		"Linεar", 
+		"$tatic", 
+		"Global", 
+		"∧bstract", 
+		"∫inal", 
+		"0verridden",
+		"Private", 
+		"ℙrotected", 
+		"Parallel", 
+		"Ⓒ orrupt", 
+		"Infinite∞", 
+		"Ðisconnected", 
+		"R∀ndom", 
+		"Quadrati⪽", 
+		"Ïnvariant"
+	};
+	private static final String[] lastNames = { 
+		"∑tack", 
+		"Ĥeap", 
+		"L➿p", 
+		"Re¢ursion", 
+		"Øverflow", 
+		"3reakpoint",
+		"Warning", 
+		"1nstance", 
+		"De🪳 ger", 
+		"βyte", 
+		"Package", 
+		"Terminal", 
+		"Thread", 
+		"Process", 
+		"Packet", 
+		"Mütex", 
+		"Compiler", 
+		"Rege𝒳", 
+		"⨃nderflow"
+	};
 
 	public int possibleCombinations() {
 		return firstNames.length * lastNames.length;
