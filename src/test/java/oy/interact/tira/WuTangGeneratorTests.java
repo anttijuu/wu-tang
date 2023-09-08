@@ -65,7 +65,7 @@ public class WuTangGeneratorTests
     }
 
     @RepeatedTest(20)
-    @DisplayName("Tests for WuTangGenerator.generateNamesFor with too much names")
+    @DisplayName("Tests for WuTangGenerator.generateNamesFor with too many names")
     public void testWuTangGeneratorThrows() {
         final String [] names = getStringArray(WuTangGenerator.getMaxNameCount() + 10);
         assertThrows(
