@@ -15,7 +15,7 @@ Tässä tehtävässä tarvitaan vain kurssien Ohjelmointi 1 ja 2 osaamistasoa va
 * metodeja (eli funktioita),
 * parametrin välitystä ja paluuarvoja.
 
-> Opettajan oliopohjaisessa malliratkaisussa on noin 75 riviä tehollista koodia ja kolme luokkaa. Oma ratkaisusi voi tietysti olla erilainen ja silti ihan OK.
+> Opettajan oliopohjaisessa malliratkaisussa on noin 75 riviä tehollista koodia ja kolme luokkaa. Oma ratkaisusi voi tietysti olla erilainen ja silti ihan OK. Pyri kuitenkin hyvään modulaariseen koodiin, mieti hyvät nimet luokille, muuttujille ja metodeille, jne.
 
 ## Tehtävä
 
