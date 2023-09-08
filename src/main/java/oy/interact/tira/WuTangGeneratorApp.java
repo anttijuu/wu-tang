@@ -45,8 +45,6 @@ public class WuTangGeneratorApp {
                         counter++,
                         programmer.getName(),
                         programmer.getWuTangName());
-            } else {
-                System.out.println("NULL IN PROGRAMMERS ARRAY");
             }
         }
     }
