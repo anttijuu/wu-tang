@@ -79,7 +79,7 @@ public class WuTangNameGenerator {
 			if (inProgrammers[index] == null) {
 				break;
 			}
-			if (inProgrammers[index].getProgrammerName().equals(name)) {
+			if (inProgrammers[index].getWuTangName().equals(name)) {
 				return false;
 			}
 		}

@@ -1,27 +1,21 @@
 package oy.interact.tira;
 
 public class Programmer {
-	private String name;
-	private String programmerName;
 
-	public Programmer(String name, String programmerName) {
+	private String name;
+	private String wuTangName;
+
+	public Programmer(String name, String wuTangName) {
 		this.name = name;
-		this.programmerName = programmerName;
+		this.wuTangName = wuTangName;
 	}
 
 	public String getName() {
 		return name;
 	}
 
-	public String getProgrammerName() {
-		return programmerName;
+	public String getWuTangName() {
+		return wuTangName;
 	}
 
-	@Override
-	public String toString() {
-		StringBuilder builder = new StringBuilder(name);
-		builder.append(" a.k.a. ");
-		builder.append(programmerName);
-		return builder.toString();
-	}
 }
