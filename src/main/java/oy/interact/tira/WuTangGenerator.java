@@ -4,6 +4,10 @@ import java.util.concurrent.ThreadLocalRandom;
 
 public class WuTangGenerator {
 
+	private WuTangGenerator() {
+		// Prevents instantiation.
+	}
+	
 	private static final String [] firstNames = {
 		"Abstract",
 		"Random",
