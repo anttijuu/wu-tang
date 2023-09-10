@@ -1,0 +1,30 @@
+{
+  "configurations" : [
+    {
+      "id" : "F4EE6287-0837-4259-9532-4014EB93C5BE",
+      "name" : "Test Scheme Action",
+      "options" : {
+        "maximumTestRepetitions" : 20,
+        "testRepetitionMode" : "fixedIterations"
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:WuTangFunctional.xcodeproj",
+      "identifier" : "314401C92AA0CB7600059B0D",
+      "name" : "WuTangFunctional"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:WuTangFunctional.xcodeproj",
+        "identifier" : "314401D92AA1B4BA00059B0D",
+        "name" : "WuTangNameTestTarget"
+      }
+    }
+  ],
+  "version" : 1
+}
