@@ -39,6 +39,7 @@ final class WuTangNameTestTarget: XCTestCase {
 			let result = wuTangNames.insert(programmer.wutangName!)
 			XCTAssertTrue(result.inserted, "\(programmer.wutangName!) not inserted since it is already in use")
 		}
+		XCTAssertEqual(names.count, wuTangNames.count, "All names must get programmer names")
 	}
 
 }
