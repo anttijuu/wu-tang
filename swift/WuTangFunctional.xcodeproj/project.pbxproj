@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		311850942AAEDFA10052C87F /* Programmer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311850932AAEDFA10052C87F /* Programmer.swift */; };
+		311850962AAEDFBE0052C87F /* Programmers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311850952AAEDFBE0052C87F /* Programmers.swift */; };
+		311850982AAEDFEF0052C87F /* Array+Programmers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311850972AAEDFEF0052C87F /* Array+Programmers.swift */; };
+		311850992AAEE0540052C87F /* Programmer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311850932AAEDFA10052C87F /* Programmer.swift */; };
+		3118509A2AAEE0570052C87F /* Programmers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311850952AAEDFBE0052C87F /* Programmers.swift */; };
+		3118509B2AAEE0590052C87F /* Array+Programmers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311850972AAEDFEF0052C87F /* Array+Programmers.swift */; };
 		314401CE2AA0CB7600059B0D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314401CD2AA0CB7600059B0D /* main.swift */; };
 		314401DD2AA1B4BA00059B0D /* WuTangNameTestTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314401DC2AA1B4BA00059B0D /* WuTangNameTestTarget.swift */; };
 		314401E12AA1B9AD00059B0D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314401CD2AA0CB7600059B0D /* main.swift */; };
@@ -25,6 +31,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		311850932AAEDFA10052C87F /* Programmer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Programmer.swift; sourceTree = "<group>"; };
+		311850952AAEDFBE0052C87F /* Programmers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Programmers.swift; sourceTree = "<group>"; };
+		311850972AAEDFEF0052C87F /* Array+Programmers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Programmers.swift"; sourceTree = "<group>"; };
 		314401CA2AA0CB7600059B0D /* WuTangFunctional */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = WuTangFunctional; sourceTree = BUILT_PRODUCTS_DIR; };
 		314401CD2AA0CB7600059B0D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		314401DA2AA1B4BA00059B0D /* WuTangNameTestTarget.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WuTangNameTestTarget.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,6 +82,9 @@
 			isa = PBXGroup;
 			children = (
 				314401CD2AA0CB7600059B0D /* main.swift */,
+				311850932AAEDFA10052C87F /* Programmer.swift */,
+				311850952AAEDFBE0052C87F /* Programmers.swift */,
+				311850972AAEDFEF0052C87F /* Array+Programmers.swift */,
 			);
 			path = WuTangFunctional;
 			sourceTree = "<group>";
@@ -175,6 +187,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				314401CE2AA0CB7600059B0D /* main.swift in Sources */,
+				311850962AAEDFBE0052C87F /* Programmers.swift in Sources */,
+				311850942AAEDFA10052C87F /* Programmer.swift in Sources */,
+				311850982AAEDFEF0052C87F /* Array+Programmers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,7 +198,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				314401E12AA1B9AD00059B0D /* main.swift in Sources */,
+				311850992AAEE0540052C87F /* Programmer.swift in Sources */,
 				314401DD2AA1B4BA00059B0D /* WuTangNameTestTarget.swift in Sources */,
+				3118509A2AAEE0570052C87F /* Programmers.swift in Sources */,
+				3118509B2AAEE0590052C87F /* Array+Programmers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
