@@ -26,8 +26,8 @@ func main() {
 	print("- The generator can produce \(Programmers.maxNameCount) unique names")
 
 	createProgrammers(for: names)
-		.thenAssignWuTangNames()
-		.thenPrint()
+		.assignWuTangNames()
+		.print()
 }
 
 func createProgrammers(for names: [String]) -> Programmers {

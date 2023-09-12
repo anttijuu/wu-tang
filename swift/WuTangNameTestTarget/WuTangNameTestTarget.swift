@@ -32,7 +32,7 @@ final class WuTangNameTestTarget: XCTestCase {
 			"Bill G"
 		]
 
-		let programmers = createProgrammers(for: names).thenAssignWuTangNames()
+		let programmers = createProgrammers(for: names).assignWuTangNames()
 		XCTAssertEqual(names.count, programmers.them.count, "All names must get programmer names")
 		var wuTangNames = Set<String>()
 		for programmer in programmers.them where programmer.wutangName != nil {

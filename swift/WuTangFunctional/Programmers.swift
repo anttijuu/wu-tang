@@ -44,7 +44,7 @@ struct Programmers {
 
 extension Programmers {
 
-	func thenAssignWuTangNames() -> Programmers {
+	func assignWuTangNames() -> Programmers {
 		var programmers = [Programmer]()
 		for programmer in self.them {
 			programmers.append(Programmer(name: programmer.name, wutangName: programmers.uniqueWuTangName()))
@@ -52,7 +52,7 @@ extension Programmers {
 		return Programmers(them: programmers)
 	}
 
-	func thenPrint() {
+	func print() {
 		for (index, programmer) in them.enumerated() {
 			Swift.print(
 				String(
