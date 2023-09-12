@@ -58,7 +58,7 @@ extension Programmers {
 				String(
 					format: "%3d. %@ a.k.a %@",
 					index + 1,
-					programmer.name.padding(toLength: 20, withPad: "_", startingAt: 0),
+					programmer.name.padding(toLength: 20, withPad: "⋅", startingAt: 0),
 					programmer.wutangName!
 				)
 			)
