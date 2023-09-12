@@ -30,13 +30,4 @@ func main() {
 		.print()
 }
 
-func createProgrammers(for names: [String]) -> Programmers {
-	var programmers = [Programmer]()
-	for name in names {
-		programmers.append(Programmer(name: name, wutangName: nil))
-	}
-	return Programmers(them: programmers)
-}
-
-
 main()
